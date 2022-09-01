@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;900&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+          theme: {
+            extend:{
+                spacing: {
+                    13: '3.25rem',
+                },
+                fontFamily: {
+                    inter: ['Inter']
+                },
+                colors: {
+                    wpu: "#bada55",
+                    kopi: "#c0ffee"
+                }
+            }
+          }
+        }
+      </script>
+    <title>Belajar Tailwind</title>
+</head>
+<body>
+    <h1 class="text-6xl font-bold text-center my-10">Mari Belajar 
+    
+    <span class="bg-gradient-to-r from-indigo-300 to-yellow-400 bg-clip-text text-transparent">TailwindCSS</span>
+    
+    </h1>
+    <section class="mb-10 bg-gradient-to-tr from-indigo-300 via-green-300 to-yellow-400">
+        <h2 class="text-3xl text-center">Spacing</h2>
+        <div class="m-13 ">Margin</div>
+        <div class="p-4 ">Padding</div>
+    </section>
+    <section class="mb-10 bg-green-200">
+        <h2 class="text-3xl text-center">Sizing</h2>
+        <div class="w-32 h-32 bg-wpu">Kotak 1</div> 
+    </section>
+
+    <section class="mb-96 font-inter max-w-3xl mx-auto">
+        <h2 class="mb-4 text-4xl  font-bold">Belajar Mengenai Typography pada tailwindcss</h2>
+        <div class="mb-3 text-lg text-gray-700 font-semibold">
+            By Muhammad Iqbal, 1 Januari 2022
+        </div>
+        <p class="mb-4">Lorem ipsum dolor sit, amet <a href="" class="underline font-semibold text-blue-600" >adipisicing</a>  elit. Tempora id quae iusto vel ullam, laborum, laudantium natus, impedit a aperiam aspernatur ab? Nemo ut et, corrupti eum, voluptatem numquam minus temporibus voluptate error ad saepe corporis autem nesciunt possimus incidunt ex, aspernatur perspiciatis expedita cupiditate amet odio ullam molestias voluptatum!</p>
+        <blockquote class="mb-4 italic font-thin text-sm">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus illum, reiciendis exercitationem impedit expedita dolorum enim nihil vel assumenda sint!"</blockquote>
+        <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, harum veritatis culpa, reprehenderit perspiciatis quibusdam qui assumenda sit tenetur recusandae minima voluptates molestiae sed nulla, sequi ut. Libero, dolorum inventore.</p>
+    </section> 
+    
+</body>
+</html>
