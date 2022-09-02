@@ -78,7 +78,7 @@
     <p class="p-5 text-2xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, aliquam expedita, cumque reiciendis nisi, optio earum nemo dicta eaque accusamus itaque. Soluta, ea nobis! Ea, accusamus libero? Asperiores minima, dolores aspernatur, aliquam soluta possimus incidunt ipsam optio assumenda expedita amet facere laborum. Molestias deleniti ipsum nesciunt dolore consequuntur, dolores quod atque iure inventore molestiae, enim totam deserunt voluptatum repellat? Voluptates dolores culpa corporis perferendis assumenda nesciunt voluptatum sequi quos iusto? Id at error eius incidunt recusandae aspernatur praesentium dignissimos explicabo ipsum optio commodi non libero consectetur, cum quos dolores dolor nemo magni suscipit necessitatibus quae aliquid consequatur! Facere impedit esse a, adipisci eum rerum accusamus exercitationem modi pariatur numquam provident nostrum hic. Amet aperiam, veniam ab ratione ex fugiat, eos nemo deleniti ad perspiciatis eveniet dolor ipsa quisquam ipsam labore quo a eum alias autem laborum repudiandae! Facere id veniam quibusdam culpa possimus explicabo, iste similique dolorem voluptates saepe asperiores dolore, quis rem ea fugit nobis provident facilis quo esse nostrum iusto officia ex harum. Adipisci nesciunt, quia sit officiis similique sint tempore architecto necessitatibus maiores odit consectetur eius quisquam fugit repellat laboriosam. Nisi cum voluptates aliquid deserunt ratione delectus impedit distinctio dolores recusandae itaque voluptatum, ab magnam ipsum quae.</p>
     </div>
 
-    <div class="mt-32 max-w-xl h-96 mx-auto bg-slate-300 bg-contain bg-no-repeat bg-center rounded-2xl shadow-xl shadow-slate-300 overflow-hidden flex" style="background-image: url(./img/laptop.jfif)">
+    <div class="mt-32 max-w-xl h-96 mx-auto bg-slate-300 bg-contain bg-no-repeat bg-center rounded-2xl shadow-xl shadow-slate-300 overflow-hidden lg:w-72 sm:mb-0 bg-white md:w-80 flex" style="background-image: url(./img/laptop.jfif)">
     <div class="w-[200px] h-[200px] bg-white/30 m-auto backdrop-blur-sm rounded-full"></div>
 
     </div>
@@ -157,15 +157,67 @@
 
     <hr class="my-24 border-t-4">
 
-    <div class="container px-6 font-inter max-w-md mx-auto lg:bg-blue-200 xl:bg-yellow-200 sm:max-w-xl md:max-w-5xl">
-        <h3 class="text-4xl font-bold text-slate-800 sm:text-5xl">Muhammad<span class="text-sky-500"> Iqbal</span></h3>
-        <img src="https://source.unsplash.com/1280x960?computer" alt="" class="mt-4 rounded-xl shadow-xl sm:mt-6 sm:h-64 sm:w-full sm:object-cover sm:object-center">
-        <h2 class="mt-6 text-2xl font-semibold text-slate-800 sm:text-4xl">Mari Belajar TailwindCSS Bersama WPU</h2>
-        <p class="mt-2 text-slate-600 sm:mt-4 sm:text-xl">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde soluta, dolorum officiis rem possimus eius impedit eaque facilis eligendi placeat neque laborum a praesentium adipisci alias, voluptate.</p>
-        <div class="mt-4 sm:mt-6 sm:text-base">
-            <a href="#" class="inline-block px-5 py-3 bg-red-600 text-white rounded-lg shadow-lg uppercase font-semibold tracking-wider text-sm">Subcribe Channel Youtube</a>
+    <div class="container px-6 font-inter max-w-md mx-auto xl:bg-yellow-200 sm:max-w-xl md:max-w-5xl flex lg:flex  lg:max-w-full lg:p-0">
+        <div class="lg:p-12 lg:flex-1">
+            <h3 class="text-4xl font-bold text-slate-800 sm:text-5xl">Muhammad<span class="text-sky-500"> Iqbal</span></h3>
+            <img src="https://source.unsplash.com/1280x960?computer" alt="" class="mt-4 rounded-xl shadow-xl sm:mt-6 sm:h-64 sm:w-full sm:object-cover sm:object-center lg:hidden">
+            <h2 class="mt-6 text-2xl font-semibold text-slate-800 sm:text-4xl">Mari Belajar TailwindCSS Bersama WPU</h2>
+            <p class="mt-2 text-slate-600 sm:mt-4 sm:text-xl">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde soluta, dolorum officiis rem possimus eius impedit eaque facilis eligendi placeat neque laborum a praesentium adipisci alias, voluptate.</p>
+            <div class="mt-4 sm:mt-6 sm:text-base">
+                <a href="#" class="inline-block px-5 py-3 bg-red-600 text-white rounded-lg shadow-lg uppercase font-semibold tracking-wider text-sm">Subcribe Channel Youtube</a>
+            </div>
+        </div>
+        <div class="hidden lg:flex lg:w-1/2">
+            <img src="https://source.unsplash.com/1280x960?computer" alt="" class="object-cover rounded-tl-full">
         </div>
     </div>
+
+    <h2 class="mt-24 mb-10 text-center font-bold text-3xl text-slate-700">My Galery</h2>
+
+    <div class="container mx-auto px-6 font-inter sm:flex sm:flex-wrap sm:gap-6 sm:justify-evenly">
+
+        <div class="rounded-md shadow-lg overflow-hidden lg:w-72 sm:mb-0 bg-white md:w-80 mb-10 sm:w-64">
+            <img src="https://source.unsplash.com/600x400?hotels" alt="" class="w-full">
+            <div class="px-6 py-4">
+                <div class="font-bold text-xl mb-2 text-slate-700">Image Title</div>
+                <p class="text-sm text-slate-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, eum.</p>
+            </div>
+        </div>
+        <div class="rounded-md shadow-lg overflow-hidden lg:w-72 sm:mb-0 bg-white md:w-80 mb-10 sm:w-64">
+            <img src="https://source.unsplash.com/600x400?hotels" alt="" class="w-full">
+            <div class="px-6 py-4">
+                <div class="font-bold text-xl mb-2 text-slate-700">Image Title</div>
+                <p class="text-sm text-slate-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, eum.</p>
+            </div>
+        </div>
+        <div class="rounded-md shadow-lg overflow-hidden lg:w-72 sm:mb-0 bg-white md:w-80 mb-10 sm:w-64">
+            <img src="https://source.unsplash.com/600x400?hotels" alt="" class="w-full">
+            <div class="px-6 py-4">
+                <div class="font-bold text-xl mb-2 text-slate-700">Image Title</div>
+                <p class="text-sm text-slate-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, eum.</p>
+            </div>
+        </div>
+        <div class="rounded-md shadow-lg overflow-hidden lg:w-72 sm:mb-0 bg-white md:w-80 mb-10 sm:w-64">
+            <img src="https://source.unsplash.com/600x400?hotels" alt="" class="w-full">
+            <div class="px-6 py-4">
+                <div class="font-bold text-xl mb-2 text-slate-700">Image Title</div>
+                <p class="text-sm text-slate-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, eum.</p>
+            </div>
+        </div>
+        <div class="rounded-md shadow-lg overflow-hidden lg:w-72 sm:mb-0 bg-white md:w-80 mb-10 sm:w-64">
+            <img src="https://source.unsplash.com/600x400?hotels" alt="" class="w-full">
+            <div class="px-6 py-4">
+                <div class="font-bold text-xl mb-2 text-slate-700">Image Title</div>
+                <p class="text-sm text-slate-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, eum.</p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <hr class="my-20 border"/>
 
 
 
