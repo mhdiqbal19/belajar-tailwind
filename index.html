@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;900&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     <script>
         tailwind.config = {
+          darkMode: 'class',
           theme: {
             extend:{
                 spacing: {
@@ -27,8 +28,13 @@
         }
       </script>
     <title>Belajar Tailwind</title>
+    <style type="text/tailwindcss">
+        #toggel:checked ~ label div.toggle-circle{
+            @apply translate-x-3
+        }
+    </style>
 </head>
-<body>
+<body class="dark:bg-slate-800 dark:text-slate-200">
     <h1 class="text-6xl font-bold text-center my-10">Mari Belajar 
     
     <span class="bg-gradient-to-r from-indigo-300 to-yellow-400 bg-clip-text text-transparent">TailwindCSS</span>
@@ -44,7 +50,7 @@
         <div class="w-32 h-32 bg-wpu">Kotak 1</div> 
     </section>
 
-    <section class="mb-96 font-inter max-w-3xl mx-auto">
+    <section class=" font-inter max-w-3xl mx-auto">
         <h2 class="mb-4 text-4xl  font-bold">Belajar Mengenai Typography pada tailwindcss</h2>
         <div class="mb-3 text-lg text-gray-700 font-semibold">
             By Muhammad Iqbal, 1 Januari 2022
@@ -53,6 +59,60 @@
         <blockquote class="mb-4 italic font-thin text-sm">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus illum, reiciendis exercitationem impedit expedita dolorum enim nihil vel assumenda sint!"</blockquote>
         <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, harum veritatis culpa, reprehenderit perspiciatis quibusdam qui assumenda sit tenetur recusandae minima voluptates molestiae sed nulla, sequi ut. Libero, dolorum inventore.</p>
     </section> 
-    
+
+    <div class="max-w-xl h-96 bg-slate-300 mx-auto mt-[42px] overflow-y-scroll bg-fixed bg-scroll" style="background-image: url('https://source.unsplash.com/1000x600?computer')">
+    <p class="p-5 text-2xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, aliquam expedita, cumque reiciendis nisi, optio earum nemo dicta eaque accusamus itaque. Soluta, ea nobis! Ea, accusamus libero? Asperiores minima, dolores aspernatur, aliquam soluta possimus incidunt ipsam optio assumenda expedita amet facere laborum. Molestias deleniti ipsum nesciunt dolore consequuntur, dolores quod atque iure inventore molestiae, enim totam deserunt voluptatum repellat? Voluptates dolores culpa corporis perferendis assumenda nesciunt voluptatum sequi quos iusto? Id at error eius incidunt recusandae aspernatur praesentium dignissimos explicabo ipsum optio commodi non libero consectetur, cum quos dolores dolor nemo magni suscipit necessitatibus quae aliquid consequatur! Facere impedit esse a, adipisci eum rerum accusamus exercitationem modi pariatur numquam provident nostrum hic. Amet aperiam, veniam ab ratione ex fugiat, eos nemo deleniti ad perspiciatis eveniet dolor ipsa quisquam ipsam labore quo a eum alias autem laborum repudiandae! Facere id veniam quibusdam culpa possimus explicabo, iste similique dolorem voluptates saepe asperiores dolore, quis rem ea fugit nobis provident facilis quo esse nostrum iusto officia ex harum. Adipisci nesciunt, quia sit officiis similique sint tempore architecto necessitatibus maiores odit consectetur eius quisquam fugit repellat laboriosam. Nisi cum voluptates aliquid deserunt ratione delectus impedit distinctio dolores recusandae itaque voluptatum, ab magnam ipsum quae.</p>
+    </div>
+
+    <div class="mt-32 max-w-xl h-96 mx-auto bg-slate-300 bg-contain bg-no-repeat bg-center rounded-2xl shadow-xl shadow-slate-300 overflow-hidden flex" style="background-image: url(./img/laptop.jfif)">
+    <div class="w-[200px] h-[200px] bg-white/30 m-auto backdrop-blur-sm rounded-full"></div>
+
+    </div>
+    <hr class="my-20">
+
+    <div class="flex justify-center">
+        <span class="text-sm text-slate-500 mr-2">Light</span>
+        <input type="checkbox" id="toggel" class="hidden">
+        <label for="toggel">
+            <div class="w-9 h-5 bg-slate-500 rounded-full flex items-center p-1 cursor-pointer">
+                <div class="w-4 h-4 bg-white rounded-full toggle-circle"></div>
+            </div>
+        </label>
+        <span class="text-sm text-slate-500 ml-2">Dark</span>
+    </div>
+
+
+
+
+
+    <button class="my-10 bg-sky-500 px-5 py-2 rounded-full text-white font-semibold font-inter block mx-auto hover:bg-sky-600 active:bg-sky-700 focus:ring-sky-300 
+    dark:bg-slate-300 dark:text-slate-800 dark:hover:text-slate-900 dark:hover:bg-slate-100
+    ">Simpan</button>
+
+    <div class="max-w-lg my-10 border border-slate-200 rounded-xl mx-auto p-5 shadow-md font-inter hover:bg-sky-500 group font-serif dark:hover:bg-slate-300">
+        <h5 class="font-bold text-slate-700 text-lg mb-3 group-hover:text-white dark:group-hover:text-slate-800 ">My Card</h5>
+        <p class=" text-slate-600 group-hover:text-white selection:bg-slate-900 first-line:uppercase first-line:tracking-widest first-letter:text-7xl first-letter:float-left first-letter:mr-3 dark:group-hover:text-slate-800">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis iure sed numquam enim rerum eaque eius laborum deleniti, qui architecto eveniet possimus aliquam, aut totam consequuntur aspernatur. Nulla, similique eaque!</p>
+    </div>
+
+    <div class="max-w-lg border border-slate-200 rounded-xl mx-auto shadow-md font-inter p-5">
+    <form action="">
+        <label for="email">
+        <span class="block font-semibold mb-1 text-slate-700 after:content-['*'] after:text-pink-500 after:ml-0.5">Email</span>
+        <input type="email" placeholder="Contoh : miqbal@gmail.com" id="email" class="px-3 py-2 shadow rounded w-full block text-sm placeholder:text-slate-400 focus:outline-none focus:ring-1 focus:ring-sky-500 focus:border-sky-500
+        invalid:text-pink-700 invalid:focus:ring-pink-700 invalid:focus:border-pink-700 peer
+        ">
+        <p class="text-sm m-1 text-pink-700 invisible peer-invalid:visible">email tidak valid!</p>
+    </label>
+    </form>
+    </div>
+    <div class="mb-96"></div>
+    <script>
+        const checkbox = document.querySelector('#toggel');
+        const html = document.querySelector("html");
+
+        checkbox.addEventListener('click', function(){
+            checkbox.checked ? html.classList.add('dark') : html.classList.remove('dark')
+        })
+    </script>
 </body>
 </html>
