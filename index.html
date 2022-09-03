@@ -4,43 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;900&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
-    <script>
-        tailwind.config = {
-          darkMode: 'class',
-          theme: {
-            extend:{
-                spacing: {
-                    13: '3.25rem',
-                },
-                fontFamily: {
-                    inter: ['Inter']
-                },
-                colors: {
-                    wpu: "#bada55",
-                    kopi: "#c0ffee"
-                },
-                animation: {
-                    'spin-slow': 'spin 3s linear infinite',
-                    'goyang': 'goyang 1s ease-in-out infinite'
-                },
-                Keyframes: {
-                    goyang: {
-                        '0%, 100%': {
-                            transform: 'rotate(-3deg)'
-                        }, 
-                        '50%':{
-                            transform: 'rotate(3deg)'
-                        }
-                    }
-                }
-            }
-          }
-        }
-      </script>
+    <link href="/css/style.css" rel="stylesheet">
     <title>Belajar Tailwind</title>
     <style type="text/tailwindcss">
         #toggel:checked ~ label div.toggle-circle{
@@ -219,56 +187,57 @@
         <h2 class="text-xl h-15 font-semibold text-slate-700 md:col-start-4 md:row-start-2 md:flex"><span class="self-center">Welcome to my site</span></h2>
         <div class="h-15 text-lg font-bold text-slate-500 md:col-start-2 md:row-start-2 md:flex"><span class="self-end">@muhammadiqbal</span></div>
 
-        <div class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] group relative overflow-hidden hover:scale-95 transition-all duration-500">
-            <div class="w-full h-full bg-[url('https://source.unsplash.com/640x480?technology')] bg-cover bg-center absolute group-hover:scale-125 transition-all duration-500 group-hover:rotate-12">
+        <div class="grid-card group">
+            <div class="grid-card-image bg-[url('https://source.unsplash.com/640x480?technology')]">
             </div>
         </div>
-        <div class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] md:col-start-3 group relative overflow-hidden hover:scale-95 transition-all duration-500">
-            <div class="w-full h-full bg-[url('https://source.unsplash.com/640x480?ball')] bg-cover bg-center absolute group-hover:scale-125 transition-all duration-500 group-hover:rotate-12">
-            </div>
-        </div>
-
-        <div class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] group relative overflow-hidden hover:scale-95 transition-all duration-500">
-            <div class="w-full h-full bg-[url('https://source.unsplash.com/640x480?motogp')] bg-cover bg-center absolute group-hover:scale-125 transition-all duration-500 group-hover:rotate-12">
+        <div class="grid-card group md:col-start-3">
+            <div class="grid-card-image bg-[url('https://source.unsplash.com/640x480?ball')] ">
             </div>
         </div>
 
-        <div class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] group relative overflow-hidden hover:scale-95 transition-all duration-500">
-            <div class="w-full h-full bg-[url('https://source.unsplash.com/640x480?cars')] bg-cover bg-center absolute group-hover:scale-125 transition-all duration-500 group-hover:rotate-12">
+        <div class="grid-card group">
+            <div class="grid-card-image bg-[url('https://source.unsplash.com/640x480?motogp')]">
             </div>
         </div>
 
-        <div class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] group relative overflow-hidden hover:scale-95 transition-all duration-500">
-            <div class="w-full h-full bg-[url('https://source.unsplash.com/640x480?motor')] bg-cover bg-center absolute group-hover:scale-125 transition-all duration-500 group-hover:rotate-12">
+        <div class="grid-card group">
+            <div class="grid-card-image bg-[url('https://source.unsplash.com/640x480?cars')]">
             </div>
         </div>
 
-        <div class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] md:col-start-2 group relative overflow-hidden hover:scale-95 transition-all duration-500">
-            <div class="w-full h-full bg-[url('https://source.unsplash.com/640x480?art')] bg-cover bg-center absolute group-hover:scale-125 transition-all duration-500 group-hover:rotate-12">
+        <div class="grid-card group">
+            <div class="grid-card-image bg-[url('https://source.unsplash.com/640x480?motor')]">
             </div>
         </div>
 
-        <div class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] md:col-start-4 group relative overflow-hidden hover:scale-95 transition-all duration-500">
-            <div class="w-full h-full bg-[url('https://source.unsplash.com/640x480?campus')] bg-cover bg-center absolute group-hover:scale-125 transition-all duration-500 group-hover:rotate-12">
+        <div class="group grid-card md:col-start-2">
+            <div class="grid-card-image bg-[url('https://source.unsplash.com/640x480?art')]">
             </div>
         </div>
 
-        <div class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] group relative overflow-hidden hover:scale-95 transition-all duration-500">
-            <div class="w-full h-full bg-[url('https://source.unsplash.com/640x480?apartment')] bg-cover bg-center absolute group-hover:scale-125 transition-all duration-500 group-hover:rotate-12">
+        <div class="group grid-card md:col-start-4">
+            <div class="grid-card-image bg-[url('https://source.unsplash.com/640x480?campus')]">
             </div>
         </div>
 
-        <div class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] md:col-start-3 group relative overflow-hidden hover:scale-95 transition-all duration-500">
-            <div class="w-full h-full bg-[url('https://source.unsplash.com/640x480?mounth')] bg-cover bg-center absolute group-hover:scale-125 transition-all duration-500 group-hover:rotate-12">
+        <div class="group grid-card">
+            <div class="grid-card-image bg-[url('https://source.unsplash.com/640x480?apartment')]">
             </div>
         </div>
 
-        <div class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] md:col-start-3 group relative overflow-hidden hover:scale-95 transition-all duration-500">
-            <div class="w-full h-full bg-[url('https://source.unsplash.com/640x480?hotels')] bg-cover bg-center absolute group-hover:scale-125 transition-all duration-500 group-hover:rotate-12">
+        <div class="grid-card md:col-start-3 group">
+            <div class="grid-card-image bg-[url('https://source.unsplash.com/640x480?mounth')] ">
             </div>
         </div>
 
+        <div class="grid-card md:col-start-3 group">
+            <div class="grid-card-image bg-[url('https://source.unsplash.com/640x480?hotels')]">
+            </div>
+        </div>
     </div>
+
+    <h1 class="text-6xl">Hello WPU</h1>
 
 
 
